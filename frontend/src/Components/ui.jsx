@@ -77,7 +77,7 @@ export const PipelineUI = () => {
     }, []);
 
     return (
-      <div ref={reactFlowWrapper} style={{width: '100vw', height: '70vh'}}>
+      <div ref={reactFlowWrapper} style={{height: '70vh'}}>
         <ReactFlow nodes={nodes} edges={edges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} onDrop={onDrop} onDragOver={onDragOver} onInit={setReactFlowInstance} nodeTypes={nodeTypes} proOptions={proOptions} snapGrid={[gridSize, gridSize]} connectionLineType='smoothstep'>
           <Background color="#aaa" gap={gridSize} />
           <Controls />

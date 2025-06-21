@@ -38,7 +38,7 @@ export const SubmitButton = () => {
     }
 
     return (
-        <div className="flex items-center justify-center mt-4">
+        <div className="flex items-center justify-center my-4">
             <button onClick={() =>submitPipeline()} type="submit" className="bg-blue-600 text-lg flex items-center justify-center gap-x-3 cursor-pointer hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg shadow transition-all duration-200">
                 {loading ? <><Loader2 className='animate-spin size-5' /> Loading...</> : <><Send size={18} /> Submit</>}
             </button>
