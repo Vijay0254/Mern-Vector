@@ -10,6 +10,13 @@ export const PipelineToolbar = () => {
                 <DraggableNode type="llm" label="🧠 LLM" />
                 <DraggableNode type="customOutput" label="📤 Output" />
                 <DraggableNode type="text" label="📝 Text" />
+            
+                {/* New demo nodes */}
+                <DraggableNode type="translate" label="🌐 Translate" />
+                <DraggableNode type="math" label="➕ Math" />
+                <DraggableNode type="condition" label="🔀 Condition" />
+                <DraggableNode type="delay" label="⏱ Delay" />
+                <DraggableNode type="promptTemplate" label="🧾 Prompt" />
             </div>
         </div>
     );

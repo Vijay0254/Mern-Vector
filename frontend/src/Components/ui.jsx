@@ -8,6 +8,11 @@ import { useStore } from '../Store/store';
 import { shallow } from 'zustand/shallow';
 import { LLMNode } from '../nodes/llmNode';
 import { TextNode } from '../nodes/textNode';
+import TranslateNode from '../nodes/TranslateNode';
+import MathNode from '../nodes/MathNode';
+import ConditionNode from '../nodes/ConditionNode';
+import DelayNode from '../nodes/DelayNode';
+import PromptTemplateNode from '../nodes/PromptTemplateNode.jsx';
 
 import 'reactflow/dist/style.css';
 import IONode from '../nodes/IONode';
@@ -19,6 +24,11 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: (props) => <IONode {...props} nodeType="output" />,
   text: TextNode,
+  translate: TranslateNode,
+  math: MathNode,
+  condition: ConditionNode,
+  delay: DelayNode,
+  promptTemplate: PromptTemplateNode,
 };
 
 const selector = (state) => ({
