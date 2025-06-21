@@ -1,0 +1,33 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test output / coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+# Mypy / Pylint / Pyright
+.mypy_cache/
+.pyright/
+.pytest_cache/
+
+# Pipenv / Poetry
+Pipfile.lock
+poetry.lock
